@@ -162,6 +162,7 @@ h3 {
     z-index: 2;
     transition: 0.5s;
     font-family: cursive;
+    cursor: pointer;
 
 }
 
@@ -234,3 +235,21 @@ h3 {
     transform: translateY(-50px);
     transition-delay: 0.5s;
 }
+
+.arrow {
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+
+
+
+
+
+  #break {
+    margin-top: 40px;
+    margin-bottom: -40px;
+    color: lightgray;
+
+  }
