@@ -22,11 +22,22 @@ let currentTargetIndex = 0;
         const countdownDiff = countDate - now;
         console.log(currentTargetIndex);
         
-
-        let dayAmount = Math.floor(countdownDiff / day);   
-        let hourAmount = Math.floor((countdownDiff % day) / hour);   
-        let minuteAmount = Math.floor((countdownDiff % hour) / minute);   
-        let secondAmount = Math.floor((countdownDiff % minute) / second);
+        let dayAmount;
+        let hourAmount;
+        let minuteAmount;
+        let secondAmount;
+        if(countdownDiff > 0) {
+          dayAmount = Math.floor(countdownDiff / day);   
+          hourAmount = Math.floor((countdownDiff % day) / hour);   
+          minuteAmount = Math.floor((countdownDiff % hour) / minute);   
+          secondAmount = Math.floor((countdownDiff % minute) / second);
+        } else {
+          dayAmount = 0;
+          hourAmount = 0;
+          minuteAmount = 0;
+          secondAmount = 0;
+        }
+        
     
         let dayText = document.getElementById("day");
         dayText.innerText=dayAmount;
