@@ -1,10 +1,10 @@
-let currentTargetIndex = 1;
+let currentTargetIndex = 2;
 
     
     const targetDates = [
         new Date('November 16, 2023 8:00:15'),
         new Date('December 20, 2023 12:00:00'),
-        new Date('March 17, 2024 00:00:00')
+        new Date('March 14, 2024 00:00:00')
     ];
     
     
