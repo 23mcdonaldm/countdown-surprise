@@ -4,7 +4,8 @@ let currentTargetIndex = 2;
     const targetDates = [
         new Date('November 16, 2023 8:00:15'),
         new Date('December 20, 2023 12:00:00'),
-        new Date('March 14, 2024 00:00:00')
+        new Date('March 14, 2024 00:00:00'),
+        new Date('May 15, 2024 00:00:00')
     ];
     
     
@@ -52,6 +53,7 @@ let currentTargetIndex = 2;
         if(currentTargetIndex == 0) {holiday.innerText = "Thanksgiving";}
         if(currentTargetIndex == 1) {holiday.innerText = "Christmas";}
         if(currentTargetIndex == 2) {holiday.innerText = "Spring";}
+        if(currentTargetIndex == 3) {holiday.innerText = "Summer";}
         /*memories*/
         let europeText = document.getElementById("europeTime");
         europeText.innerText= Math.floor(countdownDiff / (14 * day));
