@@ -1,4 +1,4 @@
-let currentTargetIndex = 2;
+let currentTargetIndex = 3;
 
     
     const targetDates = [
