@@ -2,7 +2,7 @@ let currentTargetIndex = 0;
 
     
     const targetDates = [
-      new Date('November 6, 2024 16:00:15'),
+      new Date('May 19, 2025 12:00:00'),
         new Date('November 22, 2024 8:00:15'),
         new Date('December 15, 2024 12:00:00'),
         new Date('March 14, 2025 00:00:00'),
@@ -51,7 +51,7 @@ let currentTargetIndex = 0;
         secondText.innerText=secondAmount;
 
         let holiday = document.getElementById("break");
-        if(currentTargetIndex == 0) {holiday.innerText = "Visit";}
+        if(currentTargetIndex == 0) {holiday.innerText = "Summer";}
         if(currentTargetIndex == 1) {holiday.innerText = "Thanksgiving";}
         if(currentTargetIndex == 2) {holiday.innerText = "Christmas";}
         if(currentTargetIndex == 3) {holiday.innerText = "Spring";}
