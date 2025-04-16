@@ -12,15 +12,26 @@ h2 {
     font-size: 5rem;
     font-weight: bold;
     padding-bottom: 25px;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    
-    animation: 
-        typing 4.5s steps(30, end),
-        blink-caret 1.0s step-end infinite;
-}
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+  }
+  
+  h2:nth-of-type(1) {
+    animation:
+      typing 4.5s steps(30, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  h2:nth-of-type(2) {
+    animation:
+      typing 4.5s steps(30, end),
+      blink-caret 1s step-end infinite;
+    animation-delay: 4.5s; /* Delay starts after the first one finishes */
+    animation-fill-mode: both; /* Keeps the animation state after delay */
+  }
+  
 
 @keyframes typing {
     from { width: 0 }
